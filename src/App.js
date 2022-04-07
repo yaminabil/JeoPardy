@@ -10,7 +10,7 @@ function App() {
   const [score, setScore] = useState(0);
 
   const getData = async () => {
-    const response = await fetch("http://jservice.io/api/random");
+    const response = await fetch("https://jservice.io/api/random");
     const data = await response.json();
     setData(data);
     setMessage({
